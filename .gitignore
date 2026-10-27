@@ -1,0 +1,13 @@
+# Secrets and local state
+**/.env.local
+**/.env.*.local
+**/node_modules/
+**/.next/
+**/data/*.sqlite3
+**/data/*.db
+**/*.tsbuildinfo
+**/__pycache__/
+**/*.py[cod]
+**/build/
+**/dist/
+.vercel/

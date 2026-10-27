@@ -1,0 +1,30 @@
+export type Project = {
+  id: number; name: string; objective: string; stakeholders: string; in_scope: string;
+  out_scope: string; plan_scope: string; plan_schedule: string; plan_cost: string;
+  plan_quality: string; start_date: string; status_date: string; baseline_budget: number;
+  baseline_duration_weeks: number; project_status: string; closure_record: string;
+};
+export type TeamMember = { id: number; name: string; role: string };
+export type Requirement = { id: number; code: string; description: string; priority: string; status: string; source_change_id: number | null };
+export type WbsItem = { id: number; code: string; parent_id: number | null; name: string; status: string; source_change_id: number | null };
+export type ChangeRequest = { id: number; code: string; title: string; justification: string; cost_impact: number; schedule_weeks: number; status: string; applied_at: string | null; created_at: string };
+export type ChangeItem = { id: number; change_id: number; requirement_id: number | null; wbs_id: number | null; requirement_text: string; priority: string; wbs_name: string; activity_name: string; activity_days: number; activity_cost: number; team_member_id: number | null };
+export type Activity = { id: number; code: string; wbs_id: number | null; name: string; team_member_id: number | null; duration_days: number; budget: number; actual_progress: number; delay_days: number; is_milestone: number; source_change_id: number | null; source_item_id: number | null; assignee: string | null; wbs_code: string | null };
+export type Dependency = { activity_id: number; predecessor_id: number };
+export type Expenditure = { id: number; activity_id: number; amount: number; spent_on: string; description: string; activity_code?: string; activity_name?: string };
+export type Defect = { id: number; code: string; description: string; severity: string; assignee_id: number | null; status: string; opened_on: string; assignee?: string | null };
+export type QualityCheck = { id: number; item: string; deliverable: string; outcome: string; inspected_on: string; notes: string };
+export type Risk = { id: number; code: string; description: string; likelihood: number; impact: number; response: string; owner_id: number | null; status: string; owner?: string | null };
+export type Milestone = { id: number; name: string; due_date: string; status: string };
+export type ClosureRecord = { id: number; recorded_on: string; summary: string; lessons_learned: string };
+export type ScheduleDates = { planned_start: string; planned_finish: string; forecast_start: string; forecast_finish: string; predecessors: number[] };
+export type EvmDetail = { activity_id: number; pv: number; ev: number; ac: number; planned_pct: number };
+export type Evm = { pv: number; ev: number; ac: number; cpi: number | null; spi: number | null; cv: number; sv: number; detail: EvmDetail[]; warnings: string[] };
+export type Snapshot = {
+  project: Project; team: TeamMember[]; requirements: Requirement[]; wbs: WbsItem[];
+  changes: ChangeRequest[]; changeItems: ChangeItem[]; activities: Activity[];
+  dependencies: Dependency[]; expenditures: Expenditure[]; defects: Defect[];
+  qualityChecks: QualityCheck[]; risks: Risk[]; milestones: Milestone[];
+  closures: ClosureRecord[]; schedule: Record<number, ScheduleDates>; evm: Evm;
+  summary: { progress: number; approvedBudget: number; baselineBudget: number; activityBudget: number; pendingChanges: number; delayedActivities: number; unresolvedCriticalDefects: number; approvedRequirements: number; forecastFinish: string; revisedWeeks: number; changeCost: number; changeWeeks: number };
+};

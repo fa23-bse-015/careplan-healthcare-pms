@@ -1,0 +1,594 @@
+{
+  "project": [
+    {
+      "id": 1,
+      "name": "Smart Healthcare Project Management and Monitoring System",
+      "objective": "Plan, execute, monitor, and control the development of a shared healthcare software platform for five hospitals.",
+      "stakeholders": "Hospital management; project manager; backend developers; frontend developers; database developer; quality assurance engineer; hospital users.",
+      "in_scope": "Requirements, design, development, integration, testing, and deployment planning for appointments, laboratory reports, doctor schedules, online consultations, and hospital billing.",
+      "out_scope": "Operating a hospital information system, clinical care, live medical diagnosis, and patient-facing production operations.",
+      "plan_scope": "Approved deliverables are limited to project work packages backed by approved requirements. Proposed changes remain pending until approved.",
+      "plan_schedule": "16-week baseline using Monday-Friday working days; predecessor relationships control successor dates.",
+      "plan_cost": "PKR 5,000,000 original approved baseline; approved change effects are recorded separately.",
+      "plan_quality": "Inspection checklist, defect severity and status, and risk responses are recorded with the relevant deliverables.",
+      "start_date": "2026-01-05",
+      "status_date": "2026-02-10",
+      "baseline_budget": 5000000.0,
+      "baseline_duration_weeks": 16,
+      "project_status": "In Progress",
+      "closure_record": ""
+    }
+  ],
+  "team_members": [
+    {
+      "id": 1,
+      "name": "Project Manager",
+      "role": "Project Manager"
+    },
+    {
+      "id": 2,
+      "name": "Backend Developer 1",
+      "role": "Backend Developer"
+    },
+    {
+      "id": 3,
+      "name": "Backend Developer 2",
+      "role": "Backend Developer"
+    },
+    {
+      "id": 4,
+      "name": "Frontend Developer 1",
+      "role": "Frontend Developer"
+    },
+    {
+      "id": 5,
+      "name": "Frontend Developer 2",
+      "role": "Frontend Developer"
+    },
+    {
+      "id": 6,
+      "name": "Database Developer",
+      "role": "Database Developer"
+    },
+    {
+      "id": 7,
+      "name": "Quality Assurance Engineer",
+      "role": "Quality Assurance Engineer"
+    }
+  ],
+  "change_requests": [
+    {
+      "id": 1,
+      "code": "CR-001",
+      "title": "AI preliminary diagnosis and mobile application",
+      "justification": "Hospital management proposed two additional deliverables after approval of the original baseline. Their combined estimate is PKR 800,000 and three additional weeks.",
+      "cost_impact": 800000.0,
+      "schedule_weeks": 3,
+      "status": "Approved",
+      "applied_at": "2026-10-24T15:09:58",
+      "created_at": "2026-10-24 10:09:10"
+    }
+  ],
+  "requirements": [
+    {
+      "id": 1,
+      "code": "REQ-01",
+      "description": "Register requirements and obtain approval before scope inclusion.",
+      "priority": "Critical",
+      "status": "Approved",
+      "source_change_id": null,
+      "created_at": "2026-10-24 10:09:10"
+    },
+    {
+      "id": 2,
+      "code": "REQ-02",
+      "description": "Support appointment scheduling across five hospitals.",
+      "priority": "Critical",
+      "status": "Approved",
+      "source_change_id": null,
+      "created_at": "2026-10-24 10:09:10"
+    },
+    {
+      "id": 3,
+      "code": "REQ-03",
+      "description": "Manage laboratory report workflows.",
+      "priority": "High",
+      "status": "Approved",
+      "source_change_id": null,
+      "created_at": "2026-10-24 10:09:10"
+    },
+    {
+      "id": 4,
+      "code": "REQ-04",
+      "description": "Manage doctor schedules and online consultation workflows.",
+      "priority": "High",
+      "status": "Approved",
+      "source_change_id": null,
+      "created_at": "2026-10-24 10:09:10"
+    },
+    {
+      "id": 5,
+      "code": "REQ-05",
+      "description": "Manage hospital billing workflows.",
+      "priority": "High",
+      "status": "Approved",
+      "source_change_id": null,
+      "created_at": "2026-10-24 10:09:10"
+    },
+    {
+      "id": 6,
+      "code": "REQ-06",
+      "description": "Integrate patient record management and database services.",
+      "priority": "Critical",
+      "status": "Approved",
+      "source_change_id": null,
+      "created_at": "2026-10-24 10:09:10"
+    },
+    {
+      "id": 7,
+      "code": "REQ-07",
+      "description": "Provide an AI-based preliminary diagnosis module as a proposed project deliverable.",
+      "priority": "High",
+      "status": "Approved",
+      "source_change_id": 1,
+      "created_at": "2026-10-24 10:09:10"
+    },
+    {
+      "id": 8,
+      "code": "REQ-08",
+      "description": "Provide a mobile application as a proposed project deliverable.",
+      "priority": "High",
+      "status": "Approved",
+      "source_change_id": 1,
+      "created_at": "2026-10-24 10:09:10"
+    }
+  ],
+  "wbs": [
+    {
+      "id": 1,
+      "code": "1",
+      "parent_id": null,
+      "name": "Smart healthcare project",
+      "status": "Approved",
+      "source_change_id": null
+    },
+    {
+      "id": 2,
+      "code": "1.1",
+      "parent_id": 1,
+      "name": "Initiation and project planning",
+      "status": "Approved",
+      "source_change_id": null
+    },
+    {
+      "id": 3,
+      "code": "1.2",
+      "parent_id": 1,
+      "name": "Requirements and architecture",
+      "status": "Approved",
+      "source_change_id": null
+    },
+    {
+      "id": 4,
+      "code": "1.3",
+      "parent_id": 1,
+      "name": "Core healthcare platform",
+      "status": "Approved",
+      "source_change_id": null
+    },
+    {
+      "id": 5,
+      "code": "1.4",
+      "parent_id": 1,
+      "name": "Integration and quality assurance",
+      "status": "Approved",
+      "source_change_id": null
+    },
+    {
+      "id": 6,
+      "code": "1.5",
+      "parent_id": 1,
+      "name": "Deployment and training",
+      "status": "Approved",
+      "source_change_id": null
+    },
+    {
+      "id": 7,
+      "code": "CR-001.1",
+      "parent_id": 1,
+      "name": "AI preliminary diagnosis module",
+      "status": "Approved",
+      "source_change_id": 1
+    },
+    {
+      "id": 8,
+      "code": "CR-001.2",
+      "parent_id": 1,
+      "name": "Mobile application",
+      "status": "Approved",
+      "source_change_id": 1
+    }
+  ],
+  "change_items": [
+    {
+      "id": 1,
+      "change_id": 1,
+      "requirement_id": 7,
+      "wbs_id": 7,
+      "requirement_text": "Provide an AI-based preliminary diagnosis module as a proposed project deliverable.",
+      "priority": "High",
+      "wbs_name": "AI preliminary diagnosis module",
+      "activity_name": "AI preliminary diagnosis module",
+      "activity_days": 8,
+      "activity_cost": 500000.0,
+      "team_member_id": 3
+    },
+    {
+      "id": 2,
+      "change_id": 1,
+      "requirement_id": 8,
+      "wbs_id": 8,
+      "requirement_text": "Provide a mobile application as a proposed project deliverable.",
+      "priority": "High",
+      "wbs_name": "Mobile application",
+      "activity_name": "Mobile application",
+      "activity_days": 7,
+      "activity_cost": 300000.0,
+      "team_member_id": 5
+    }
+  ],
+  "activities": [
+    {
+      "id": 1,
+      "code": "ACT-01",
+      "wbs_id": 2,
+      "name": "Project charter and kickoff",
+      "team_member_id": 1,
+      "duration_days": 5,
+      "budget": 300000.0,
+      "actual_progress": 100.0,
+      "delay_days": 0,
+      "is_milestone": 1,
+      "source_change_id": null,
+      "source_item_id": null
+    },
+    {
+      "id": 2,
+      "code": "ACT-02",
+      "wbs_id": 3,
+      "name": "Requirements and architecture",
+      "team_member_id": 2,
+      "duration_days": 8,
+      "budget": 500000.0,
+      "actual_progress": 100.0,
+      "delay_days": 0,
+      "is_milestone": 0,
+      "source_change_id": null,
+      "source_item_id": null
+    },
+    {
+      "id": 3,
+      "code": "ACT-03",
+      "wbs_id": 4,
+      "name": "Data and API foundation",
+      "team_member_id": 6,
+      "duration_days": 10,
+      "budget": 800000.0,
+      "actual_progress": 100.0,
+      "delay_days": 0,
+      "is_milestone": 0,
+      "source_change_id": null,
+      "source_item_id": null
+    },
+    {
+      "id": 4,
+      "code": "ACT-04",
+      "wbs_id": 4,
+      "name": "Appointment and patient record services",
+      "team_member_id": 2,
+      "duration_days": 15,
+      "budget": 900000.0,
+      "actual_progress": 20.0,
+      "delay_days": 3,
+      "is_milestone": 0,
+      "source_change_id": null,
+      "source_item_id": null
+    },
+    {
+      "id": 5,
+      "code": "ACT-05",
+      "wbs_id": 4,
+      "name": "Laboratory, schedules, consultation, and billing",
+      "team_member_id": 3,
+      "duration_days": 15,
+      "budget": 800000.0,
+      "actual_progress": 45.0,
+      "delay_days": 0,
+      "is_milestone": 0,
+      "source_change_id": null,
+      "source_item_id": null
+    },
+    {
+      "id": 6,
+      "code": "ACT-06",
+      "wbs_id": 4,
+      "name": "Web application",
+      "team_member_id": 4,
+      "duration_days": 15,
+      "budget": 950000.0,
+      "actual_progress": 0.0,
+      "delay_days": 0,
+      "is_milestone": 0,
+      "source_change_id": null,
+      "source_item_id": null
+    },
+    {
+      "id": 7,
+      "code": "ACT-07",
+      "wbs_id": 5,
+      "name": "Integration and data migration",
+      "team_member_id": 6,
+      "duration_days": 7,
+      "budget": 400000.0,
+      "actual_progress": 0.0,
+      "delay_days": 0,
+      "is_milestone": 0,
+      "source_change_id": null,
+      "source_item_id": null
+    },
+    {
+      "id": 8,
+      "code": "ACT-08",
+      "wbs_id": 5,
+      "name": "Quality assurance and user acceptance",
+      "team_member_id": 7,
+      "duration_days": 10,
+      "budget": 250000.0,
+      "actual_progress": 0.0,
+      "delay_days": 0,
+      "is_milestone": 0,
+      "source_change_id": null,
+      "source_item_id": null
+    },
+    {
+      "id": 9,
+      "code": "ACT-09",
+      "wbs_id": 6,
+      "name": "Deployment and training",
+      "team_member_id": 1,
+      "duration_days": 5,
+      "budget": 100000.0,
+      "actual_progress": 0.0,
+      "delay_days": 0,
+      "is_milestone": 1,
+      "source_change_id": null,
+      "source_item_id": null
+    },
+    {
+      "id": 10,
+      "code": "CR-001-ACT-01",
+      "wbs_id": 7,
+      "name": "AI preliminary diagnosis module",
+      "team_member_id": 3,
+      "duration_days": 8,
+      "budget": 500000.0,
+      "actual_progress": 0.0,
+      "delay_days": 0,
+      "is_milestone": 0,
+      "source_change_id": 1,
+      "source_item_id": 1
+    },
+    {
+      "id": 11,
+      "code": "CR-001-ACT-02",
+      "wbs_id": 8,
+      "name": "Mobile application",
+      "team_member_id": 5,
+      "duration_days": 7,
+      "budget": 300000.0,
+      "actual_progress": 0.0,
+      "delay_days": 0,
+      "is_milestone": 0,
+      "source_change_id": 1,
+      "source_item_id": 2
+    }
+  ],
+  "dependencies": [
+    {
+      "activity_id": 2,
+      "predecessor_id": 1
+    },
+    {
+      "activity_id": 3,
+      "predecessor_id": 2
+    },
+    {
+      "activity_id": 4,
+      "predecessor_id": 3
+    },
+    {
+      "activity_id": 5,
+      "predecessor_id": 3
+    },
+    {
+      "activity_id": 6,
+      "predecessor_id": 4
+    },
+    {
+      "activity_id": 6,
+      "predecessor_id": 5
+    },
+    {
+      "activity_id": 7,
+      "predecessor_id": 6
+    },
+    {
+      "activity_id": 8,
+      "predecessor_id": 7
+    },
+    {
+      "activity_id": 9,
+      "predecessor_id": 8
+    },
+    {
+      "activity_id": 10,
+      "predecessor_id": 9
+    },
+    {
+      "activity_id": 11,
+      "predecessor_id": 10
+    }
+  ],
+  "expenditures": [
+    {
+      "id": 1,
+      "activity_id": 1,
+      "amount": 300000.0,
+      "spent_on": "2026-01-09",
+      "description": "Charter and kickoff work"
+    },
+    {
+      "id": 2,
+      "activity_id": 2,
+      "amount": 500000.0,
+      "spent_on": "2026-01-21",
+      "description": "Requirements and architecture work"
+    },
+    {
+      "id": 3,
+      "activity_id": 3,
+      "amount": 820000.0,
+      "spent_on": "2026-02-04",
+      "description": "Data and API foundation; sample cost variance"
+    },
+    {
+      "id": 4,
+      "activity_id": 4,
+      "amount": 230000.0,
+      "spent_on": "2026-02-10",
+      "description": "Appointment and record services to status date"
+    },
+    {
+      "id": 5,
+      "activity_id": 5,
+      "amount": 355000.0,
+      "spent_on": "2026-02-10",
+      "description": "Clinical workflow services to status date"
+    }
+  ],
+  "defects": [
+    {
+      "id": 1,
+      "code": "DEF-001",
+      "description": "Appointment scheduling permits conflicting bookings under concurrent requests.",
+      "severity": "Critical",
+      "assignee_id": 7,
+      "status": "Open",
+      "opened_on": "2026-02-10"
+    },
+    {
+      "id": 2,
+      "code": "DEF-002",
+      "description": "Patient record management can associate an update with the wrong patient record.",
+      "severity": "Critical",
+      "assignee_id": 2,
+      "status": "Open",
+      "opened_on": "2026-02-10"
+    }
+  ],
+  "quality_checks": [
+    {
+      "id": 1,
+      "item": "Appointment conflict and double-booking checks",
+      "deliverable": "Appointment scheduling",
+      "outcome": "Fail",
+      "inspected_on": "2026-02-10",
+      "notes": "Critical defect DEF-001 remains open."
+    },
+    {
+      "id": 2,
+      "item": "Patient identity and record update checks",
+      "deliverable": "Patient record management",
+      "outcome": "Fail",
+      "inspected_on": "2026-02-10",
+      "notes": "Critical defect DEF-002 remains open."
+    },
+    {
+      "id": 3,
+      "item": "Database/API integration smoke inspection",
+      "deliverable": "Data and API foundation",
+      "outcome": "Pass",
+      "inspected_on": "2026-02-10",
+      "notes": "Sample inspection recorded."
+    }
+  ],
+  "risks": [
+    {
+      "id": 1,
+      "code": "RSK-01",
+      "description": "Concurrent booking conflicts delay acceptance of appointment scheduling.",
+      "likelihood": 4,
+      "impact": 5,
+      "response": "Prevent: add conflict checks and concurrency tests. Correct: block conflicting writes and retest.",
+      "owner_id": 7,
+      "status": "Open"
+    },
+    {
+      "id": 2,
+      "code": "RSK-02",
+      "description": "Patient identity mapping defect causes an incorrect record update.",
+      "likelihood": 3,
+      "impact": 5,
+      "response": "Prevent: verify identity constraints and migration mappings. Correct: quarantine affected updates and reconcile records.",
+      "owner_id": 6,
+      "status": "Open"
+    },
+    {
+      "id": 3,
+      "code": "RSK-03",
+      "description": "AI module scope raises model validation and clinical approval needs.",
+      "likelihood": 4,
+      "impact": 5,
+      "response": "Prevent: define non-diagnostic boundaries and approval criteria. Correct: suspend the module until review criteria pass.",
+      "owner_id": 1,
+      "status": "Open"
+    },
+    {
+      "id": 4,
+      "code": "RSK-04",
+      "description": "Mobile application increases integration and release workload.",
+      "likelihood": 3,
+      "impact": 4,
+      "response": "Prevent: approve interface contracts and staged integration. Correct: use the approved schedule reserve and reforecast.",
+      "owner_id": 4,
+      "status": "Open"
+    }
+  ],
+  "milestones": [
+    {
+      "id": 1,
+      "name": "Charter approved",
+      "due_date": "2026-01-09",
+      "status": "Achieved"
+    },
+    {
+      "id": 2,
+      "name": "Requirements complete",
+      "due_date": "2026-01-21",
+      "status": "Achieved"
+    },
+    {
+      "id": 3,
+      "name": "Integrated platform UAT",
+      "due_date": "2026-04-10",
+      "status": "Planned"
+    },
+    {
+      "id": 4,
+      "name": "Baseline deployment",
+      "due_date": "2026-04-17",
+      "status": "Planned"
+    }
+  ],
+  "closure_records": []
+}
